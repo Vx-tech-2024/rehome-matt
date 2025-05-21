@@ -6,12 +6,12 @@ import Footer from '../components/Footer';
 const Home = () => {
     return (
         <div>   
-            <Navbar />
+            
 
             <header className="home-hero">
                 <h1>Welcome to ReHome Matt</h1>
                 <p>Buy and sell second-hand items with ease.Give them a second Home!</p>
-                <a href="/post" className="btn">Sell an item</a>
+                <a href="/sell" className="btn">Sell an item</a>
             </header>
 
             <section className="featured-section">  
@@ -22,6 +22,7 @@ const Home = () => {
                     <h3>Blender</h3>
                     <p>Price: $50</p>
                     <p>Condition: Used</p>
+                    
                     </div>
                    <div className="item-card">
                     <img src="/images/camera.jpg" alt="Camera image" />
@@ -42,7 +43,7 @@ const Home = () => {
                     <p>Condition: Good</p>
                     </div>
                    <div className="item-card">
-                    <img src="/image/Dining Set.jpg" alt="dining set image" />
+                    <img src="/images/DiningSet.jpg" alt="dining set image" />
                     <h3>Dining Set</h3>
                     <p>Price: $150</p>
                     <p>Condition: Used</p>
@@ -80,7 +81,7 @@ const Home = () => {
             </div>
          </section>
     
-         <Footer />
+       
          </div>
     );  
            

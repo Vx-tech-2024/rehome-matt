@@ -3,5 +3,7 @@
     padding: 20px;
     background-color: #222;
     color: white;
-    height: 15px;
+    height: 20px;
+    position: sticky;
+    bottom: 0;
 }
