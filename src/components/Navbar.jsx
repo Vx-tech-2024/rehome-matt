@@ -4,7 +4,10 @@ import './Navbar.css';
 const Navbar = () => {
     return(
         <nav className="navbar">
-            <div className="logo">ReHome Matt</div>
+            <div className="logo">
+                <div>ReHome Matt</div>
+                <div className="logoimage"><img src="/src/assets/logo.png" alt="logo" /></div>
+            </div>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/post">Sell</a></li>
