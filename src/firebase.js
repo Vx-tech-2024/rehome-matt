@@ -3,13 +3,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAPsHVtkK1p1hiKfgcJbW1AQHJlYSm3Hhw",
-  authDomain: "rehome-matt.firebaseapp.com",
-  projectId: "rehome-matt",
-  storageBucket: "rehome-matt.firebasestorage.app",
-  messagingSenderId: "164764212406",
-  appId: "1:164764212406:web:0da9b1e0e83047d841da17",
-  // etc. — paste full config here
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
